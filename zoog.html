@@ -1,0 +1,84 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+
+<head>
+    <title>p5js Template</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.3/p5.js"></script>
+    
+    <script>
+        function setup() {
+            createCanvas(800,600);
+        }
+
+        function draw() {
+        //head
+        fill("yellow");
+        rect(250, 20, 180, 100);
+        line(400, 8, 400, 20);
+        fill(0, 220, 250);
+        ellipse(400, 4, 8, 8);
+        //eyes
+        fill(255, 255, 255);
+        ellipse(300, 50, 30, 30);
+        ellipse(380, 50, 30, 30);
+        //nose
+        strokeWeight(3);
+        stroke(0, 0, 0);
+        line(340, 57, 340, 82);
+        //mouth
+        fill(200, 200, 200);
+        rect(310, 90, 65, 20);
+        //neck
+        fill(0, 220, 250);
+        rect(330, 120, 20, 40);
+        //body
+        fill("yellow");
+        rect(250, 160, 180, 200);
+        fill(0, 220, 250);
+        rect(265, 180, 150, 100);
+        ellipse(280, 310, 25, 25);
+        textSize(50);
+        fill("orange");
+        textFont("futura");
+        text("Hello!", 280, 250);
+        //arms
+        fill(0, 220, 250);
+        quad(170, 190, 175, 220, 250, 190, 250, 160);80, 30
+        quad(90, 252, 85, 227, 170, 190, 175, 220);
+        quad(430, 160, 430, 190, 510, 240, 510, 210);
+        quad(510, 210, 511, 240, 588, 280, 590, 252);
+        //hands
+        fill("yellow");
+        triangle(92, 250, 85, 230, 70, 260);
+        triangle(90, 252, 85, 227, 55, 245);
+        triangle(590, 260, 588, 280, 615, 280);
+        triangle(590, 252, 588, 280, 622, 258);
+        //legs
+        fill(0, 220, 250);
+        rect(270, 360, 50, 80);
+        rect(270, 440, 50, 80);
+        rect(360, 360, 50, 80);
+        rect(360, 440, 50, 80);
+        //feet
+        fill("yellow");
+        rect(255, 520, 65, 25);
+        rect(360, 520, 65, 25);
+        
+        }
+    </script>
+</head>
+
+<body>
+    <div id="code" class="container-fluid">
+        <script src="https://gist-it.appspot.com/github/mariams0999/p5js/blob/gh-pages/robot-zoog.html?footer=0"></script>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <script>
+        $(window).bind("load", function() {
+            $('#code').before($('#defaultCanvas0').remove());
+        });
+    </script>
+</body>
+
+</html>
